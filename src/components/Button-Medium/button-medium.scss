@@ -1,0 +1,25 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/variables' as *;
+
+.button-medium{
+    @include flexCenterRow;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 9.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid $black;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover{
+        background-color: var(--hover-background-color);
+        color: var(--hover-text-color)
+    }
+    &:active{
+        background-color: var(--active-background-color);
+    }
+}
+

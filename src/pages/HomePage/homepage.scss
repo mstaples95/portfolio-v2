@@ -1,0 +1,70 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/variables' as *;
+
+.hero {
+    @include flexSpaceBetweenRow;
+    padding-left: 1.5rem;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+
+    .spline-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &__main{
+        position: relative;
+        width: 50%;
+        z-index: 1;
+    }
+
+    &__header{
+        color: $bone;
+        margin-bottom: 0;
+    }
+    &__sub-header{
+        color: $ash;
+        margin-top: 0;
+    }
+    &__text{
+        color: $bone;
+    }
+    &__button-container{
+        @include flexSpaceEvenlyRow;
+        justify-content: flex-start;
+    }
+    
+    &__img-container{
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    &__img{
+        height: 100%;
+        opacity: 90%;
+        object-fit: contain;
+    }
+}
+
+@include tabletMode{
+    .hero{
+        &__main{
+            width: 45%;
+        }
+    }
+}
+
+@include desktopMode{
+    .hero{
+        &__main{
+            width: 38%;
+        }
+    }
+}

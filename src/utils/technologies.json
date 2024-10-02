@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "ReactJS",
+        "iconURL": "C:/Users/mstap/Work/Portfolio/portfolio-site/src/assets/icons/icons8-react-native-50.png"
+    },
+    {
+        "id": 2,
+        "name": "HTML5",
+        "iconURL": "assets/icons/icons8-html5-50.png"
+    },
+    {
+        "id": 3,
+        "name": "CSS3",
+        "iconURL": "assets/icons/icons8-css3-50.png"
+    },
+    {
+        "id": 4,
+        "name": "NodeJS",
+        "iconURL": "assets/icons/icons8-nodejs-50.png"
+    },
+    {
+        "id": 5,
+        "name": "Javascript",
+        "iconURL": "assets/icons/icons8-javascript-50.png"
+    },
+    {
+        "id": 6,
+        "name": "Typescript",
+        "iconURL": "assets/icons/icons8-typescript-50.png"
+    },
+    {
+        "id": 7,
+        "name": "Express",
+        "iconURL": "assets/icons/icons8-express-js-50.png"
+    },
+    {
+        "id": 8,
+        "name": "MySQL",
+        "iconURL": "assets/icons/icons8-mysql-50.png"
+    },
+    {
+        "id": 9,
+        "name": "Python",
+        "iconURL": "assets/icons/icons8-python-50.png"
+    },
+    {
+        "id": 10,
+        "name": "Git",
+        "iconURL": "assets/icons/icons8-git-50.png"
+    },
+    {
+        "id": 11,
+        "name": "KNEX",
+        "iconURL": "assets/icons/icons8-knex-50.png"
+    },
+    {
+        "id": 12,
+        "name": "Sass",
+        "iconURL": "assets/icons/icons8-sass-50.png"
+    },
+    {
+        "id": 13,
+        "name": "Github",
+        "iconURL": "assets/icons/icons8-github-50.png"
+    },
+    {
+        "id": 14,
+        "name": "RESTful API",
+        "iconURL": "assets/icons/icons8-rest-api-50.png"
+    },
+    {
+        "id": 15,
+        "name": "Command Line",
+        "iconURL": "assets/icons/icons8-command-line-50.png"
+    },
+    {
+        "id": 16,
+        "name": "Wordpress",
+        "iconURL": "assets/icons/icons8-wordpress-50.png"
+    }
+]

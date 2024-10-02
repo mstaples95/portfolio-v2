@@ -1,0 +1,105 @@
+@use '../../styles/partials/breakpoints' as *;
+
+//font face rules
+
+//headings
+
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("../../assets/fonts/LibreFranklin-VariableFont_wght.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 38px;
+    line-height: normal;
+}
+
+li {
+    font-family: "Libre Franklin", sans-serif;
+    line-height: normal;
+}
+
+//section headings
+
+h2 {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 28px;
+    line-height: normal;
+}
+
+h3 {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+    line-height: normal;
+}
+
+h4{
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+//body copy 
+
+p {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 14px;
+    line-height: normal;
+
+    @include tabletMode {
+        font-size: 18px;
+        }
+
+    @include desktopMode{
+        font: 14px;
+    } 
+}
+
+a {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 12px;
+    line-height: normal;
+
+    @include tabletMode {
+        font-size: 18px;
+        }
+
+    @include desktopMode{
+        font: 14px;
+        } 
+}
+
+span {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 12px;
+    line-height: normal;
+
+    @include tabletMode {
+        font-size: 18px;
+        }
+
+    @include desktopMode{
+        font: 14px;
+        } 
+}
+
+//footer copy
+
+footer p {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 10px;
+    line-height: normal;
+}
+
+//labels and buttons 
+
+button, label, input, textarea {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 10px;
+    line-height: normal;
+
+    @include tabletMode {
+        font-size: 14px;
+    }
+}

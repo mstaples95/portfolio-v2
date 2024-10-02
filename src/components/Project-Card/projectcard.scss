@@ -1,0 +1,83 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/breakpoints' as *;
+@use '../../styles/partials/variables' as *;
+
+.project-card{
+    background-color: $black;
+    color: $ash;
+    border-radius: 10px;
+    @include flexSpaceBetweenColumn;
+    width: 22rem;
+    padding: 1rem;
+    border: 2px solid $dark-purple;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.7); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.7);
+    margin-bottom: 2rem;
+
+    &__heading{
+        color: $bone;
+        margin: .5rem 0;
+    }
+
+    &__img{
+        width: 18rem;
+        height: 12rem;
+        border-radius: 10px;
+    }
+
+    &__tech-icon-list{
+        @include flexSpaceEvenlyRow;
+    }
+
+    &__icon{
+        width: 36px;
+        height: 36px;
+    }
+
+    &__content{
+        padding: 0 1rem;
+    }
+
+    &__button-container{
+        @include flexCenterRow;
+    }
+}
+
+
+
+@include tabletMode{
+    .project-card{
+        width: 45rem;
+        flex-direction: row;
+
+        &__img{
+            height: 18rem;
+            width: 22rem;
+        }
+    }
+}
+
+@include desktopMode{
+    .project-card{
+        width: 60rem;
+        padding: 1.5rem;
+
+        &__icon{
+            margin: 0 1rem;
+        }
+
+        &__tech-icon-list{
+            @include flexCenterRow;
+        }
+    }
+    .card {
+        opacity: 0;
+        transform:  translateX(-100%);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+    
+    .card.visible{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
